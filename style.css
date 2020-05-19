@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&family=Sigmar+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.bgimage{
+    background: url(./paul.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+}
+
+.site{
+    margin-left: 8.3rem;
+}
+
+.tile{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .5s ease;
+    border-radius: 10%;
+}
+.tile:hover{
+    transform: scale(0.98) translateY(5px);
+}
+
+.tile img{
+    width: 100px;
+    height: 100px;
+}
+
+.tile h2{
+    font-family: Piedra; 
+    font-size: 20px;       
+}
+
+.aplayer{
+    margin: 0 auto ;
+    bottom: 0px;
+    position: relative;
+    box-shadow: 0 -2px -2px black;
+    background-color: white;
+    transition: all ease 0.5;
+}
+
+@media only screen and (max-width: 360px){
+    .bgimage{
+        width: 100%;   
+    }
+
+    .site{
+        margin-left: 6.8rem;
+    }
+
+}
+
+
+
